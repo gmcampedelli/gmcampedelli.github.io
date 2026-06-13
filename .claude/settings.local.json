@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import PyPDF2; print\\('PyPDF2 ok'\\)\")",
+      "Bash(python3 -c \"import fitz; print\\('pymupdf ok'\\)\")",
+      "Bash(cd *)",
+      "Bash(open *)",
+      "WebSearch",
+      "WebFetch(domain:sites.google.com)",
+      "Bash(curl -sL \"https://lh3.googleusercontent.com/sitesv/AA5AbUDbk80IepOLmqTxhTFgAF4vvsLxjeiFI2LO_FYWH0zcyctj6QTX2mv1am4Hd1reZUn-jnHG9t8XCQA8Y0SA_bynn0j362cwNLD_FEiXVSNgsxYpVjZzhBNqVocrCePvwGUNndME15uDTuqBB-2xBDAZrzcJmr0fJmgk-_FqittWv6lsDoj405xuKxkiEKlFZtux1KbkOk00sHQBWw5tY6ec1geBJlC4RkLiF2pltSA=w1280\" -o headshot.jpg)",
+      "WebFetch(domain:www.theguardian.com)",
+      "Bash(grep -nE '#[0-9a-fA-F]{3,6}|rgba?\\\\\\(' assets/style.css)",
+      "Bash(python3)",
+      "Bash(python3 *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://127.0.0.1:8765/palettes/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://127.0.0.1:8765/palettes/palette-1.html)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://127.0.0.1:8765/assets/style.css)",
+      "Bash(curl -s \"https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=o63xL24vZ04&format=json\")",
+      "Bash(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8765/assets/style.css)",
+      "Bash(echo \"style.css HTTP: $\\(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:8765/assets/style.css\\)\")",
+      "Bash(curl -s -o /dev/null -w '%{http_code}' 'http://127.0.0.1:8765/assets/style.css?v=2')",
+      "Bash(echo \"css?v=2 -> $\\(curl -s -o /dev/null -w '%{http_code}' 'http://127.0.0.1:8765/assets/style.css?v=2'\\)\")",
+      "Bash(git --version)",
+      "Bash(echo \"git: $\\(git --version || echo MISSING\\)\")",
+      "Bash(gh --version)",
+      "Bash(echo \"gh: $\\(gh --version)",
+      "Bash(git config *)",
+      "Read(//Users/gianmaria/.ssh/**)",
+      "Bash(ssh -o BatchMode=yes -o ConnectTimeout=6 -o StrictHostKeyChecking=accept-new -T git@github.com)",
+      "Bash(brew --version)",
+      "Bash(brew install *)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit -q -m 'Initial site: home, CV, papers, teaching, media *)",
+      "Bash(git branch *)"
+    ]
+  }
+}

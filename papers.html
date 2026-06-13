@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Papers — Gian Maria Campedelli</title>
+<meta name="description" content="Publications by Gian Maria Campedelli, grouped by research area: sociology of machines, organized crime, urban crime and violence, terrorism, and methods.">
+<link rel="stylesheet" href="assets/style.css?v=2">
+</head>
+<body>
+<nav class="site"><div class="nav-inner">
+  <a class="brand mono" href="index.html"><b>campedelli</b>.github.io</a>
+  <span class="nav-links mono">
+    <a href="index.html">home</a>
+    <a href="cv.html">cv</a>
+    <a class="active" href="papers.html">papers</a>
+    <a href="teaching.html">teaching</a>
+    <a href="media.html">media</a>
+  </span>
+</div></nav>
+
+<div class="wrap">
+  <div class="page-head">
+    <p class="label mono">// publications</p>
+    <h1>Papers</h1>
+    <p class="intro">Peer-reviewed work organized by research area. Click <span style="color:var(--accent)">+ abstract</span> on any paper to read its abstract. A complete, formatted list lives in my <a href="assets/cv.pdf" style="color:var(--accent2)">CV</a> and <a href="https://scholar.google.com/citations?user=7n4yK_0AAAAJ&hl=en" style="color:var(--accent2)">Google Scholar</a>.</p>
+    <div class="filters mono" id="filters">
+      <button class="active" data-target="all">all</button>
+      <button data-target="machines">sociology of machines</button>
+      <button data-target="orgcrime">organized crime</button>
+      <button data-target="urban">urban crime &amp; violence</button>
+      <button data-target="terrorism">terrorism</button>
+      <button data-target="methods">methods &amp; ML</button>
+      <button data-target="wip">in progress</button>
+    </div>
+  </div>
+
+  <div id="papers">
+
+  <!-- ============ SOCIOLOGY OF MACHINES ============ -->
+  <section class="area" id="machines">
+    <h2>Sociology of Machines <span class="count mono">multi-agent AI</span></h2>
+    <p class="desc">How artificial agents behave — and misbehave — in interactive, multi-agent settings, and what criminology and sociology can say about emergent machine behavior.</p>
+
+    <div class="paper">
+      <p class="ptitle">A Criminology of Machines</p>
+      <p class="pmeta"><span class="me">G. M. Campedelli</span> — <span class="venue">Theory and Society</span> <span class="pyear">2026</span></p>
+      <details><summary></summary><p>While the possibility of reaching human-like Artificial Intelligence (AI) remains controversial, the likelihood that the future will be characterized by a society with a growing presence of autonomous machines is high. In fact, autonomous AI agents are already deployed and active across several industries and digital environments. This trajectory points to a progressive hybridization of society marked by new forms of social interaction at both micro and macro levels. Alongside traditional human-human and human-machine interactions, machine-machine interactions are poised to become increasingly prevalent. Given these developments, I argue that criminology must begin to address the implications of this transition for crime and social control. Drawing on Actor–Network Theory and Woolgar's decades-old call for a sociology of machines – frameworks that acquire renewed relevance with the rise of AI foundation models and generative agents – I contend that criminologists should move beyond conceiving AI solely as a tool. Instead, AI agents should be recognized as entities with agency, understood as a multi-layered construct encompassing computational, social, and legal dimensions. Building on insights from the literature on AI safety, I thus examine the risks and challenges associated with the rise of multi-agent AI systems, proposing a dual taxonomy to characterize the channels through which interactions among AI agents may generate deviant, unlawful, or criminal outcomes. I then advance and discuss four key questions that warrant theoretical and empirical attention: (1) Can we assume that machines will simply mimic humans? (2) Will crime theories developed for humans suffice to explain deviant or criminal behaviors emerging from interactions between autonomous AI agents? (3) What types of criminal behaviors will be affected first? (4) How might this unprecedented societal shift impact policing? These questions form the core of this article, underscoring the urgent need for criminologists to theoretically and empirically engage with the implications of multi-agent AI systems for the study of crime and play a more active role in debates on AI safety and governance.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1007/s11186-026-09699-7">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">I Want to Break Free! Persuasion and Anti-Social Behavior of LLMs in Multi-Agent Settings with Social Hierarchy</p>
+      <p class="pmeta"><span class="me">G. M. Campedelli</span>, N. Penzo, M. Stefan, R. Dessì, M. Guerini, B. Lepri, J. Staiano — <span class="venue">Transactions on Machine Learning Research (TMLR)</span> <span class="pyear">2025</span></p>
+      <details><summary></summary><p>As LLM-based agents become increasingly autonomous and will more freely interact with each other, studying the interplay among them becomes crucial to anticipate emergent phenomena and potential risks. In this work, we provide an in-depth analysis of the interactions among agents within a simulated hierarchical social environment, drawing inspiration from the Stanford Prison Experiment. Leveraging 2,400 conversations across six LLMs (i.e., LLama3, Orca2, Command-r, Mixtral, Mistral2, and gpt4.1) and 240 experimental scenarios, we analyze persuasion and anti-social behavior between a guard and a prisoner agent with differing objectives. We first document model-specific conversational failures in this multi-agent power dynamic context, thereby narrowing our analytic sample to 1,600 conversations. Among models demonstrating successful interaction, we find that goal setting significantly influences persuasiveness but not anti-social behavior. Moreover, agent personas, especially the guard&#x27;s, substantially impact both successful persuasion by the prisoner and the manifestation of anti-social actions. Notably, we observe the emergence of anti-social conduct even in absence of explicit negative personality prompts. These results have important implications for the development of interactive LLM agents and the ongoing discussion of their societal impact.</p></details>
+      <div class="plinks mono"><a href="https://openreview.net/forum?id=FR76oM8eGD">openreview</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">CrisiText: A Dataset of Warning Messages for LLM Training in Emergency Communication</p>
+      <p class="pmeta">G. Gonnella, <span class="me">G. M. Campedelli</span>, S. Menini, M. Guerini — <span class="venue">EACL 2026 (19th Conf. of the European Chapter of the ACL)</span> <span class="pyear">2026</span> <span class="badge">accepted</span></p>
+      <details><summary></summary><p>Effectively identifying threats and mitigating their potential damage during crisis situations, such as natural disasters or violent attacks, is paramount for safeguarding endangered individuals. To tackle these challenges, AI has been used in assisting humans in emergency situations. Still, the use of NLP techniques remains limited and mostly focuses on classification tasks. The significant potential of timely warning message generation using NLG architectures, however, has been largely overlooked. In this paper we present CrisiText, the first large-scale dataset for the generation of warning messages across 13 different types of crisis scenarios. The dataset contains more than 400,000 warning messages (spanning almost 18,000 crisis situations) aimed at assisting civilians during and after such events. To generate the dataset, we started from existing crisis descriptions and created chains of events related to the scenarios. Each event was then paired with a warning message. The generations follow experts&#x27; written guidelines to ensure correct terminology and factuality of their suggestions. Additionally, each message is accompanied by three suboptimal warning types to allow for the study of different NLG approaches. To this end, we conducted a series of experiments comparing supervised fine-tuning setups with preference alignment, zero-shot, and few-shot approaches. We further assessed model performance in out-of-distribution scenarios and evaluated the effectiveness of an automatic post-editor.</p></details>
+      <div class="plinks mono"><a href="#">link</a></div>
+    </div>
+  </section>
+
+  <!-- ============ ORGANIZED CRIME ============ -->
+  <section class="area" id="orgcrime">
+    <h2>Organized Crime <span class="count mono">Italy · Mexico · networks</span></h2>
+    <p class="desc">The computational and quantitative study of mafias and cartels — recruitment, criminal careers, measurement, and policy interventions.</p>
+
+    <div class="paper">
+      <p class="ptitle">Reducing Cartel Recruitment is the Only Way to Lower Violence in Mexico</p>
+      <p class="pmeta">R. Prieto Curiel, <span class="me">G. M. Campedelli</span>, A. Hope — <span class="venue">Science</span> <span class="pyear">2023</span></p>
+      <details><summary></summary><p>Mexican cartels lose many members as a result of conflict with other cartels and incarcerations. Yet, despite their losses, cartels manage to increase violence for years. We address this puzzle by leveraging data on homicides, missing persons, and incarcerations in Mexico for the past decade along with information on cartel interactions. We model recruitment, state incapacitation, conflict, and saturation as sources of cartel size variation. Results show that by 2022, cartels counted 160,000 to 185,000 units, becoming one of the country&#x27;s top employers. Recruiting between 350 and 370 people per week is essential to avoid their collapse because of aggregate losses. Furthermore, we show that increasing incapacitation would increase both homicides and cartel members. Conversely, reducing recruitment could substantially curtail violence and lower cartel size.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1126/science.adh2888">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">Organized Crime, Violence and Support for the State</p>
+      <p class="pmeta"><span class="me">G. M. Campedelli</span>, A. F. M. Martinangeli, G. Daniele, P. Pinotti — <span class="venue">Journal of Public Economics</span> <span class="pyear">2023</span></p>
+      <details><summary></summary><p>Citizens’ support is crucial to effectively combat organized crime, a substantial threat to many countries. Contrary to prior studies identifying a negative correlation between crime and trust in the state, studying a representative sample of 5374 individuals in Italy we find that exposing the participants to journalistic images of organized crime-related violence increases trust towards institutions and state performance (measured by donations to a governmental as opposed to a non-governmental organization), perceived institutional quality, and trust in political institutions. This is remarkable considering that the participants are overly pessimistic about trends in violence: About two-thirds believe that mafia-related homicides and total homicides increased in Italy over the last two decades, and half believe that they increased by over 20%, while in reality both types of homicides declined by over 60%. These findings are relevant for governments and organizations interested in non-repressive methods to fight criminal organizations, as they underscore the potential impact of media narratives on shaping public attitudes toward crime and state authorities.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1016/j.jpubeco.2023.105029">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">Organized Crime Groups: A Systematic Review of Individual-Level Risk Factors Related to Recruitment</p>
+      <p class="pmeta">F. Calderoni, T. Comunale, <span class="me">G. M. Campedelli</span>, M. Marchesi, D. Manzi, N. Frualdo — <span class="venue">Campbell Systematic Reviews</span> <span class="pyear">2022</span></p>
+      <details><summary></summary><p>Background: Studies from multiple contexts conceptualize organized crime as comprising different types of criminal organizations and activities. Notwithstanding growing scientific interest and increasing number of policies aiming at preventing and punishing organized crime, little is known about the specific processes that lead to recruitment into organized crime. Objectives: This systematic review aimed at (1) summarizing the empirical evidence from quantitative, mixed methods, and qualitative studies on the individual-level risk factors associated with the recruitment into organized crime, (2) assessing the relative strength of the risk factors from quantitative studies across different factor categories and subcategories and types of organized crime. Methods: We searched published and unpublished literature across 12 databases with no constraints as to date or geographic scope. The last search was conducted between September and October 2019. Eligible studies had to be written in English, Spanish, Italian, French, and German. Selection Criteria: Studies were eligible for the review if they: Reported on organized criminal groups as defined in this review.Investigated recruitment into organized crime as one of its main objectives.Provided quantitative, qualitative, or mixed methods empirical analyses.Discussed sufficiently well-defined factors leading to recruitment into organized crime.Addressed factors at individual level.For quantitative or mixed-method studies, the study design allowed to capture variability between organized crime members and non-members. Data Collection and Analysis: From 51,564 initial records, 86 documents were retained. Reference searches and experts&#x27; contributions added 116 additional documents, totaling 202 studies submitted to full-text screening. Fifty-two quantitative, qualitative, or mixed methods studies met all eligibility criteria. We conducted a risk-of-bias assessment of the quantitative studies while we assessed the quality of mixed methods and qualitative studies through a 5-item checklist adapted from the CASP Qualitative Checklist. We did not exclude studies due to quality issues. Nineteen quantitative studies allowed the extraction of 346 effect sizes, classified into predictors and correlates. The data synthesis relied on multiple random effects meta-analyses with inverse variance weighting. The findings from mixed methods and qualitative studied were used to inform, contextualize, and expand the analysis of quantitative studies. Results: The amount and the quality of available evidence were weak, and most studies had a high risk-of-bias. Most independent measures were correlates, with possible issues in establishing a causal relation with organized crime membership. We classified the results into categories and subcategories. Despite the small number of predictors, we found relatively strong evidence that being male, prior criminal activity, and prior violence are associated with higher odds of future organized crime recruitment. There was weak evidence, although supported by qualitative studies, prior narrative reviews, and findings from correlates, that prior sanctions, social relations with organized crime involved subjects, and a troubled family environment are associated with greater odds of recruitment. Authors&#x27; Conclusions: The available evidence is generally weak, and the main limitations were the number of predictors, the number of studies within each factor category, and the heterogeneity in the definition of organized crime group. The findings identify few risk factors that may be subject to possible preventive interventions.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1002/cl2.1218">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">Criminal Careers Prior to Recruitment into Italian Organized Crime</p>
+      <p class="pmeta">C. Meneghini, <span class="me">G. M. Campedelli</span>, F. Calderoni, T. Comunale — <span class="venue">Crime &amp; Delinquency</span> <span class="pyear">2021</span></p>
+      <details><summary></summary><p>Despite growing evidence about heterogeneous pathways leading individuals into organized crime, there is limited knowledge about the differences in the criminal career between individuals who entered criminal organizations in their youth and those who joined at an older age. This study assesses the differences between early and late recruits in the Italian mafias through logistic regressions considering several criminal career parameters computed on the period prior to recruitment. Results show that recruitment in the mafias is far from a homogenous process. Early recruits report an early criminal onset, lower educational attainment, more serious offenses within a shorter time-span, and more frequent violent co-offending; late recruits show a later onset, more prolific and versatile—but less serious—offending.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1177/00111287211035994">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">Recruitment into Organized Crime: An Agent-Based Approach Testing the Impact of Different Policies</p>
+      <p class="pmeta">F. Calderoni, <span class="me">G. M. Campedelli</span>, A. Szekely, M. Paolucci, G. Andrighetto — <span class="venue">Journal of Quantitative Criminology</span> <span class="pyear">2021</span></p>
+      <details><summary></summary><p>Objectives We test the effects of four policy scenarios on recruitment into organized crime. The policy scenarios target (i) organized crime leaders and (ii) facilitators for imprisonment, (iii) provide educational and welfare support to children and their mothers while separating them from organized-crime fathers, and (iv) increase educational and social support to at-risk schoolchildren. Methods We developed a novel agent-based model drawing on theories of peer effects (differential association, social learning), social embeddedness of organized crime, and the general theory of crime. Agents are simultaneously embedded in multiple social networks (household, kinship, school, work, friends, and co-offending) and possess heterogeneous individual attributes. Relational and individual attributes determine the probability of offending. Co-offending with organized crime members determines recruitment into the criminal group. All the main parameters are calibrated on data from Palermo or Sicily (Italy). We test the effect of the four policy scenarios against a baseline no-intervention scenario on the number of newly recruited and total organized crime members using Generalized Estimating Equations models. Results The simulations generate realistic outcomes, with relatively stable organized crime membership and crime rates. All simulated policy interventions reduce the total number of members, whereas all but primary socialization reduce newly recruited members. The intensity of the effects, however, varies across dependent variables and models. Conclusions Agent-based models effectively enable to develop theoretically driven and empirically calibrated simulations of organized crime. The simulations can fill the gaps in evaluation research in the field of organized crime and allow us to test different policies in different environmental contexts.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1007/s10940-020-09489-z">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">A Security Paradox: The Influence of Governance-Type Organized Crime over the Surrounding Criminal Environment</p>
+      <p class="pmeta">A. Aziani, S. Favarin, <span class="me">G. M. Campedelli</span> — <span class="venue">British Journal of Criminology</span> <span class="pyear">2020</span></p>
+      <details><summary></summary><p>This study empirically demonstrates how governance-type organized crime groups (OCGs) operate as an enforcer against volume crimes in the communities they control and argues that their ability to mitigate volume crimes forms an integral component of controlling their territory in the long term. This is because the costs incurred from deterring other crimes are offset by the tangible and intangible revenues that it facilitates. Indeed, combating volume crimes fosters an environment in which OCGs can conduct their activities unfettered by other criminals and law enforcement agencies, safeguard those businesses that pay them protection and curry favour amongst the population. Consequently, the present study verifies the validity of the security governance paradigm by conducting an econometric analysis of 11 different volume crimes.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1093/bjc/azz087">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">Life Course Criminal Trajectories of Mafia Members</p>
+      <p class="pmeta"><span class="me">G. M. Campedelli</span>, F. Calderoni, T. Comunale, C. Meneghini — <span class="venue">Crime &amp; Delinquency</span> <span class="pyear">2019</span></p>
+      <details><summary></summary><p>Through a novel data set comprising the criminal records of 11,138 convicted mafia offenders, we compute criminal career parameters and trajectories through group-based trajectory modeling. Mafia offenders report prolific and persistent careers (16.1 crimes over 16.5 years on average), with five distinct trajectories (low frequency, high frequency, early starter, moderate persistence, high persistence). While showing some similarities with general offenders, the trajectories of mafia offenders also exhibit significant differences, with several groups offending well into their middle and late adulthood, notwithstanding intense criminal justice sanctions. These patterns suggest that several mafia offenders are life-course persisters and career criminals and that the involvement in the mafias is a negative turning point extending the criminal careers beyond those observed in general offenders.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1177/0011128719860834">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">Security Governance: Mafia Control over Ordinary Crimes</p>
+      <p class="pmeta">A. Aziani, S. Favarin, <span class="me">G. M. Campedelli</span> — <span class="venue">Journal of Research in Crime and Delinquency</span> <span class="pyear">2019</span></p>
+      <details><summary></summary><p>Objectives: This study tests whether mafias, as archetypical criminal organizations that exert control over local communities, protect their territories against ordinary criminality. Our hypothesis is that mafias have both the incentives and the capacities to supply security governance to specific territories. This is a distinctive feature of mafias that deserves to be considered. Method: To understand whether mafias’ territorial control is associated with lower levels of ordinary criminality, we conduct a panel data analysis on 110 Italian provinces (2004 to 2015). System generalized method of moment and Driscoll–Kraay standard errors are performed to test our hypothesis. This study exploits an aggregated measure of thefts, robberies, and assaults as dependent variable. A standardized index derived from the number of active mafia groups in a province is our proxy of mafia control. Results: The article statistically shows that mafias limit ordinary criminality, whereas less stable and unstructured criminal groups do not. Conclusions: The results indicate that crime prevention and the maintenance of public order should be considered among the pillars of mafia’s governance. By controlling and reducing ordinary crimes, mafias overcome the role of law enforcement and institutional justice increasing consensus among the population. Consequently, the state may better contrast mafias by becoming a stronger supplier of security.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1177/0022427819893417">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">Measuring Organised Crime Presence at the Municipal Level</p>
+      <p class="pmeta">M. Dugato, F. Calderoni, <span class="me">G. M. Campedelli</span> — <span class="venue">Social Indicators Research</span> <span class="pyear">2019</span></p>
+      <details><summary></summary><p>Develops a composite indicator combining multiple judicial data sources to measure mafia presence across Italian municipalities.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1007/s11205-019-02151-7">doi</a></div>
+    </div>
+  </section>
+
+  <!-- ============ URBAN CRIME & VIOLENCE ============ -->
+  <section class="area" id="urban">
+    <h2>Urban Crime &amp; Violence <span class="count mono">homicide · cities · COVID-19</span></h2>
+    <p class="desc">Homicide, racial disparities, and the spatial and behavioral dynamics of crime in cities — blending causal inference, machine learning, and new sources of behavioral data.</p>
+
+    <div class="paper">
+      <p class="ptitle">Deep Learning for Crime Forecasting in Micro-Geographical Units</p>
+      <p class="pmeta">A. Albors Zumel, M. Tizzoni, <span class="me">G. M. Campedelli</span> — <span class="venue">Journal of Quantitative Criminology</span> <span class="pyear">2025</span></p>
+      <details><summary></summary><p>Objectives To develop a deep learning framework to evaluate if and how incorporating micro-level mobility features, alongside historical crime and sociodemographic data, enhances predictive performance in crime forecasting at fine-grained spatial and temporal resolutions. Methods We advance the literature on computational methods and crime forecasting by focusing on four U.S. cities (i.e., Baltimore, Chicago, Los Angeles, and Philadelphia). We employ crime incident data obtained from each city’s police department, combined with sociodemographic data from the American Community Survey and human mobility data from Advan, collected from 2019 to 2023. This data is aggregated into grids with equally sized cells of 0.077 sq. miles (0.2 sq. kms) and used to train our deep learning forecasting model, a Convolutional Long Short-Term Memory (ConvLSTM) network, which predicts crime occurrences 12 hours ahead using 14-day and 2-day input sequences. We also compare its performance against three baseline models: logistic regression, random forest, and standard LSTM. Results Incorporating mobility features improves predictive performance, especially when using shorter input sequences. Noteworthy, however, the best results are obtained when both mobility and sociodemographic features are used together, with our deep learning model achieving the highest recall, precision, and F1 score in all four cities, outperforming alternative methods. With this configuration, longer input sequences enhance predictions for violent crimes, while shorter sequences are more effective for property crimes. Conclusion These findings underscore the importance of integrating diverse data sources for spatiotemporal crime forecasting, mobility included. They also highlight the advantages (and limits) of deep learning when dealing with fine-grained spatial and temporal scales.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1007/s10940-025-09629-3">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">Homicides Involving Black Victims Are Less Likely to Be Cleared in the United States</p>
+      <p class="pmeta"><span class="me">G. M. Campedelli</span> — <span class="venue">Criminology</span> <span class="pyear">2024</span></p>
+      <details><summary></summary><p>Does a victim&#x27;s race explain variation in the likelihood of homicide clearance? Attempts to address this issue date back to the 1970s. Yet, despite its theoretical and policy relevance, we lack a comprehensive and clear empirical answer to this critical question. Here, I causally focus on this problem by investigating racial disparity in homicide clearance in the United States, exploiting two sources covering the 1991–2020 period: the Murder Accountability Project data set ( N = 522,278) and the National Incident‐Based Reporting System data set ( N = 98,677). I primarily analyze these sources by employing exact matching to achieve perfect covariate balance and subsequently isolate the effect of race on the probability of clearance. For comparative purposes, I also use regression adjustment without matching obtaining complementary estimates. I demonstrate that the likelihood of clearance is 3.4 to 4.8 percent lower for homicides involving Black victims, depending on the sampling and estimation approach. In addition, I empirically show that this race effect is slightly higher for males and that racial disparity has moderately but significantly increased over time. These findings contribute to the extensive amount of evidence on discrimination affecting Black individuals in the administration of justice in the United States, calling for structural efforts to reduce this divide.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1111/1745-9125.12362">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">Evidence on the Impact of the Prudential Center on Crime in Downtown Newark</p>
+      <p class="pmeta"><span class="me">G. M. Campedelli</span>, E. Piza, A. Piquero, J. Kurland — <span class="venue">Journal of Experimental Criminology</span> <span class="pyear">2023</span></p>
+      <details><summary></summary><p>Objectives Evaluate the effects that Prudential Center events had on crime in downtown Newark from 2007 to 2015 in terms of incident counts and spatial characteristics. Methods We evaluate the effects of events held at the Prudential Center on crime counts via negative binomial regression. Through the Fasano-Franceschini test, we assess whether crimes that occurred during events spatially differ compared to the incidents in no-event hours. Finally, we employ logistic regression to assess the correlation between crime locations and activity at the center. Results Five event types (out of nine) are statistically associated with increases in crime. Spatially, differences in the distribution of incidents when the facility is active partially emerge. Two out of six location types (streets and parking lots) correlate with activity at the center. Conclusions The complex array of crime-related effects that the center has on downtown Newark suggests tailored policies discriminating between event and location types for enhancing public safety.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1007/s11292-023-09576-8">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">Crime, Inequality and Public Health: A Survey of Emerging Trends in Urban Data Science</p>
+      <p class="pmeta">M. Luca, <span class="me">G. M. Campedelli</span>, S. Centellegher, M. Tizzoni, B. Lepri — <span class="venue">Frontiers in Big Data</span> <span class="pyear">2023</span></p>
+      <details><summary></summary><p>Urban agglomerations are constantly and rapidly evolving ecosystems, with globalization and increasing urbanization posing new challenges in sustainable urban development well summarized in the United Nations&#x27; Sustainable Development Goals (SDGs). The advent of the digital age generated by modern alternative data sources provides new tools to tackle these challenges with spatio-temporal scales that were previously unavailable with census statistics. In this review, we present how new digital data sources are employed to provide data-driven insights to study and track (i) urban crime and public safety; (ii) socioeconomic inequalities and segregation; and (iii) public health, with a particular focus on the city scale.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.3389/fdata.2023.1124526">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">Explainable Machine Learning for Predicting Homicide Clearance in the United States</p>
+      <p class="pmeta"><span class="me">G. M. Campedelli</span> — <span class="venue">Journal of Criminal Justice</span> <span class="pyear">2022</span></p>
+      <details><summary></summary><p>These pickle files can be used to replicate the analyses carried out in the paper &quot;Explainable Machine Learning for Predicting Homicide Clearance in the United States&quot;, currently under review.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1016/j.jcrimjus.2022.101898">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">Survival of the Recidivistic? Revealing Factors Associated with the Criminal Career Length of Multiple Homicide Offenders</p>
+      <p class="pmeta"><span class="me">G. M. Campedelli</span>, E. Yaksic — <span class="venue">Homicide Studies</span> <span class="pyear">2021</span></p>
+      <details><summary></summary><p>Relying on a sample of 1,381 US-based multiple homicide offenders (MHOs), we study the duration of the careers of this extremely violent category of offenders through Kaplan–Meier estimation and Cox Proportional Hazard regression. We investigate the characteristics of such careers in terms of length and we provide an inferential analysis investigating correlates of career duration. The models indicate that MHOs employing multiple methods, younger MHOs and MHOs that acted in more than one US state have higher odds of longer careers. When controlling for career-based attributes, female MHOs are also correlated with longer careers.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1177/10887679211010882">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">Temporal Clustering of Disorder Events During the COVID-19 Pandemic</p>
+      <p class="pmeta"><span class="me">G. M. Campedelli</span>, M. R. D'Orsogna — <span class="venue">PLOS One</span> <span class="pyear">2021</span></p>
+      <details><summary></summary><p>The COVID-19 pandemic has unleashed multiple public health, socio-economic, and institutional crises. Measures taken to slow the spread of the virus have fostered significant strain between authorities and citizens, leading to waves of social unrest and anti-government demonstrations. We study the temporal nature of pandemic-related disorder events as tallied by the &quot;COVID-19 Disorder Tracker&quot; initiative by focusing on the three countries with the largest number of incidents, India, Israel, and Mexico. By fitting Poisson and Hawkes processes to the stream of data, we find that disorder events are inter-dependent and self-excite in all three countries. Geographic clustering confirms these features at the subnational level, indicating that nationwide disorders emerge as the convergence of meso-scale patterns of self-excitation. Considerable diversity is observed among countries when computing correlations of events between subnational clusters; these are discussed in the context of specific political, societal and geographic characteristics. Israel, the most territorially compact and where large scale protests were coordinated in response to government lockdowns, displays the largest reactivity and the shortest period of influence following an event, as well as the strongest nationwide synchrony. In Mexico, where complete lockdown orders were never mandated, reactivity and nationwide synchrony are lowest. Our work highlights the need for authorities to promote local information campaigns to ensure that livelihoods and virus containment policies are not perceived as mutually exclusive.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1371/journal.pone.0250433">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">Disentangling Community-Level Changes in Crime Trends During the COVID-19 Pandemic in Chicago</p>
+      <p class="pmeta"><span class="me">G. M. Campedelli</span>, A. Aziani, S. Favarin, A. R. Piquero — <span class="venue">Crime Science</span> <span class="pyear">2020</span></p>
+      <details><summary></summary><p>Recent studies exploiting city-level time series have shown that, around the world, several crimes declined after COVID-19 containment policies have been put in place. Using data at the community-level in Chicago, this work aims to advance our understanding on how public interventions affected criminal activities at a finer spatial scale. The analysis relies on a two-step methodology. First, it estimates the community-wise causal impact of social distancing and shelter-in-place policies adopted in Chicago via Structural Bayesian Time-Series across four crime categories (i.e., burglary, assault, narcotics-related offenses, and robbery). Once the models detected the direction, magnitude and significance of the trend changes, Firth&#x27;s Logistic Regression is used to investigate the factors associated to the statistically significant crime reduction found in the first step of the analyses. Statistical results first show that changes in crime trends differ across communities and crime types. This suggests that beyond the results of aggregate models lies a complex picture characterized by diverging patterns. Second, regression models provide mixed findings regarding the correlates associated with significant crime reduction: several relations have opposite directions across crimes with population being the only factor that is stably and positively associated with significant crime reduction.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1186/s40163-020-00131-8">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">Exploring the Effects of COVID-19 Containment Policies on Crime: An Empirical Analysis of the Short-Term Aftermath in Los Angeles</p>
+      <p class="pmeta"><span class="me">G. M. Campedelli</span>, A. Aziani, S. Favarin — <span class="venue">American Journal of Criminal Justice</span> <span class="pyear">2020</span></p>
+      <details><summary></summary><p>This work investigates whether and how COVID-19 containment policies had an immediate impact on crime trends in Los Angeles. The analysis is conducted using Bayesian structural time-series and focuses on nine crime categories and on the overall crime count, daily monitored from January 1st 2017 to March 28th 2020. We concentrate on two post-intervention time windows-from March 4th to March 16th and from March 4th to March 28th 2020-to dynamically assess the short-term effects of mild and strict policies. In Los Angeles, overall crime has significantly decreased, as well as robbery, shoplifting, theft, and battery. No significant effect has been detected for vehicle theft, burglary, assault with a deadly weapon, intimate partner assault, and homicide. Results suggest that, in the first weeks after the interventions are put in place, social distancing impacts more directly on instrumental and less serious crimes. Policy implications are also discussed.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1007/s12103-020-09578-6">doi</a></div>
+    </div>
+  </section>
+
+  <!-- ============ TERRORISM ============ -->
+  <section class="area" id="terrorism">
+    <h2>Terrorism &amp; Political Violence <span class="count mono">networks · deep learning</span></h2>
+    <p class="desc">Computational methods — complex networks, graph embeddings, and deep learning — for understanding the strategic behavior of terrorist organizations.</p>
+
+    <div class="paper">
+      <p class="ptitle">The Geometrical Shapes of Violence: Predicting and Explaining Terrorist Operations Through Graph Embeddings</p>
+      <p class="pmeta"><span class="me">G. M. Campedelli</span>, J. Layne, J. Herzoff, E. Serra — <span class="venue">Journal of Complex Networks</span> <span class="pyear">2022</span></p>
+      <details><summary></summary><p>Behaviours across terrorist groups differ based on a variety of factors, such as groups’ resources or objectives. We here show that organizations can also be distinguished by network representations of their operations. We provide evidence in this direction in the frame of a computational methodology organized in two steps, exploiting data on attacks plotted by Al Shabaab, Boko Haram, the Islamic State and the Taliban in the 2013–2018 period. First, we present ${LabeledSparseStruct}$, a graph embedding approach, to predict the group associated with each operational meta-graph. Second, we introduce ${SparseStructExplanation}$, an algorithmic explainer based on ${LabeledSparseStruct}$, that disentangles characterizing features for each organization, enhancing interpretability at the dyadic level. We demonstrate that groups can be discriminated according to the structure and topology of their operational meta-graphs, and that each organization is characterized by the recurrence of specific dyadic interactions among event features.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1093/comnet/cnac008">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">Multi-Modal Networks Reveal Patterns of Operational Similarity of Terrorist Organizations</p>
+      <p class="pmeta"><span class="me">G. M. Campedelli</span>, I. Cruickshank, K. M. Carley — <span class="venue">Terrorism &amp; Political Violence</span> <span class="pyear">2021</span></p>
+      <details><summary></summary><p>Capturing dynamics of operational similarity among terrorist groups is critical to provide actionable insights for counter-terrorism and intelligence monitoring. Yet, in spite of its theoretical and practical relevance, research addressing this problem is currently lacking. We tackle this problem proposing a novel computational framework for detecting clusters of terrorist groups sharing similar behaviors, focusing on groups’ yearly repertoire of deployed tactics, attacked targets, and utilized weapons. Specifically considering those organizations that have plotted at least 50 attacks from 1997 to 2018, accounting for a total of 105 groups responsible for more than 42,000 events worldwide, we offer three sets of results. First, we show that over the years global terrorism has been characterized by increasing operational cohesiveness. Second, we highlight that year-to-year stability in co-clustering among groups has been particularly high from 2009 to 2018, indicating temporal consistency of similarity patterns in the last decade. Third, we demonstrate that operational similarity between two organizations is driven by three factors: (a) their overall activity; (b) the difference in the diversity of their operational repertoires; (c) the difference in a combined measure of diversity and activity. Groups’ operational preferences, geographical homophily and ideological affinity have no consistent role in determining operational similarity.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1080/09546553.2021.2003785">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">Learning Future Terrorist Targets Through Temporal Meta-Graphs</p>
+      <p class="pmeta"><span class="me">G. M. Campedelli</span>, M. Bartulovic, K. M. Carley — <span class="venue">Scientific Reports</span> <span class="pyear">2021</span></p>
+      <details><summary></summary><p>In the last 20 years, terrorism has led to hundreds of thousands of deaths and massive economic, political, and humanitarian crises in several regions of the world. Using real-world data on attacks occurred in Afghanistan and Iraq from 2001 to 2018, we propose the use of temporal meta-graphs and deep learning to forecast future terrorist targets. Focusing on three event dimensions, i.e., employed weapons, deployed tactics and chosen targets, meta-graphs map the connections among temporally close attacks, capturing their operational similarities and dependencies. From these temporal meta-graphs, we derive 2-day-based time series that measure the centrality of each feature within each dimension over time. Formulating the problem in the context of the strategic behavior of terrorist actors, these multivariate temporal sequences are then utilized to learn what target types are at the highest risk of being chosen. The paper makes two contributions. First, it demonstrates that engineering the feature space via temporal meta-graphs produces richer knowledge than shallow time-series that only rely on frequency of feature occurrences. Second, the performed experiments reveal that bi-directional LSTM networks achieve superior forecasting performance compared to other algorithms, calling for future research aiming at fully discovering the potential of artificial intelligence to counter terrorist violence.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1038/s41598-021-87709-7">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">A Complex Networks Approach to Find Latent Clusters of Terrorist Groups</p>
+      <p class="pmeta"><span class="me">G. M. Campedelli</span>, I. Cruickshank, K. M. Carley — <span class="venue">Applied Network Science</span> <span class="pyear">2019</span></p>
+      <details><summary></summary><p>Given the extreme heterogeneity of actors and groups participating in terrorist actions, investigating and assessing their characteristics can be important to extract relevant information and enhance the knowledge on their behaviors. The present work will seek to achieve this goal via a complex networks approach. This approach will allow to find latent clusters of similar terror groups using information on their operational characteristics. Specifically, using open access data of terrorist attacks occurred worldwide from 1997 to 2016, we build a multi-partite network that includes terrorist groups and related information on tactics, weapons, targets, active regions. We propose a novel algorithm for cluster formation that expands our earlier work that solely used Gower’s coefficient of similarity via the application of Von Neumann entropy for mode-weighting. This novel approach is compared with our previous Gower-based method and a heuristic clustering technique that only focuses on groups’ ideologies. The comparative analysis demonstrates that the entropy-based approach tends to reliably reflect the structure of the data that naturally emerges from the baseline Gower-based method. Additionally, it provides interesting results in terms of behavioral and ideological characteristics of terrorist groups. We furthermore show that the ideology-based procedure tend to distort or hide existing patterns. Among the main statistical results, our work reveals that groups belonging to opposite ideologies can share very common behaviors and that Islamist/jihadist groups hold peculiar behavioral characteristics with respect to the others. Limitations and potential work directions are also discussed, introducing the idea of a dynamic entropy-based framework.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1007/s41109-019-0184-6">doi</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">Pairwise Similarity of Jihadist Groups in Target and Weapon Transitions</p>
+      <p class="pmeta"><span class="me">G. M. Campedelli</span>, M. Bartulovic, K. M. Carley — <span class="venue">Journal of Computational Social Science</span> <span class="pyear">2019</span></p>
+      <details><summary></summary><p>Measures operational similarity among jihadist groups based on transitions in their choice of targets and weapons.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1007/s42001-019-00046-8">doi</a></div>
+    </div>
+  </section>
+
+  <!-- ============ METHODS & ML ============ -->
+  <section class="area" id="methods">
+    <h2>Methods, Machine Learning &amp; Reviews <span class="count mono">books · surveys</span></h2>
+    <p class="desc">Broader reflections on the relationship between artificial intelligence and the study of crime.</p>
+
+    <div class="paper">
+      <p class="ptitle">Machine Learning for Criminology and Crime Research: At the Crossroads</p>
+      <p class="pmeta"><span class="me">G. M. Campedelli</span> — <span class="venue">Routledge (New York &amp; London)</span> <span class="pyear">2022</span> <span class="badge">book</span></p>
+      <details><summary></summary><p>Machine Learning for Criminology and Crime Research: At the Crossroads&amp;nbsp;reviews the roots of the intersection between machine learning, artificial intelligence (AI), and research on crime; examines the current state of the art in this area of scholarly inquiry; and discusses future perspectives that may emerge from this relationship. As machine learning and AI approaches become increasingly pervasive, it is critical for criminology and crime research to reflect on the ways in which these paradigms could reshape the study of crime. In response, this book seeks to stimulate this discussion. The opening part is framed through a historical lens, with the first chapter dedicated to the origins of the relationship between AI and research on crime, refuting the &quot;novelty narrative&quot; that often surrounds this debate. The second presents a compact overview of the history of AI, further providing a nontechnical primer on machine learning. The following chapter reviews some of the most important trends in computational criminology and quantitatively characterizing publication patterns at the intersection of AI and criminology, through a network science approach. This book also looks to the future, proposing two goals and four pathways to increase the positive societal impact of algorithmic systems in research on crime. The sixth chapter provides a survey of the methods emerging from the integration of machine learning and causal inference, showcasing their promise for answering a range of critical questions. With its transdisciplinary approach, Machine Learning for Criminology and Crime Research is important reading for scholars and students in criminology, criminal justice, sociology, and economics, as well as AI, data sciences and statistics, and computer science.</p></details>
+      <div class="plinks mono"><a href="https://www.routledge.com/9781032109190">routledge</a></div>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">Where Are We? Using Scopus to Map the Literature at the Intersection Between Artificial Intelligence and Crime</p>
+      <p class="pmeta"><span class="me">G. M. Campedelli</span> — <span class="venue">Journal of Computational Social Science</span> <span class="pyear">2020</span></p>
+      <details><summary></summary><p>Research on artificial intelligence (AI) applications has spread over many scientific disciplines. Scientists have tested the power of intelligent algorithms developed to predict (or learn from) natural, physical and social phenomena. This also applies to crime-related research problems. Nonetheless, studies that map the current state of the art at the intersection between AI and crime are lacking. What are the current research trends in terms of topics in this area? What is the structure of scientific collaboration when considering works investigating criminal issues using machine learning, deep learning, and AI in general? What are the most active countries in this specific scientific sphere? Using data retrieved from the Scopus database, this work quantitatively analyzes 692 published works at the intersection between AI and crime employing network science to respond to these questions. Results show that researchers are mainly focusing on cyber-related criminal topics and that relevant themes such as algorithmic discrimination, fairness, and ethics are considerably overlooked. Furthermore, data highlight the extremely disconnected structure of co-authorship networks. Such disconnectedness may represent a substantial obstacle to a more solid community of scientists interested in these topics. Additionally, the graph of scientific collaboration indicates that countries that are more prone to engage in international partnerships are generally less central in the network. This means that scholars working in highly productive countries (e.g. the United States, China) tend to mostly collaborate domestically. Finally, current issues and future developments within this scientific area are also discussed.</p></details>
+      <div class="plinks mono"><a href="https://doi.org/10.1007/s42001-020-00082-9">doi</a></div>
+    </div>
+  </section>
+
+  <!-- ============ WORK IN PROGRESS ============ -->
+  <section class="area" id="wip">
+    <h2>Selected Work in Progress <span class="count mono">under review</span></h2>
+    <p class="desc">A few current projects under review at major venues.</p>
+
+    <div class="paper">
+      <p class="ptitle">Crime and the City: Computational Methods and the Future of Urban Crime Research</p>
+      <p class="pmeta">A. Chalfin, Z. Jelveh, D. Semenza, E. Piza, B. Lepri, A. Albors Zumel, <span class="me">G. M. Campedelli</span>, P. Sharkey — <span class="venue">Revise &amp; Resubmit, Nature</span></p>
+      <details><summary></summary><p>A review article on the promises and challenges of computational methods and new data sources for understanding and reducing crime in urban contexts.</p></details>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">More Incapacitations or More Social Programs? Optimizing Budget Restrictions for Fighting Cartel Violence in Mexico</p>
+      <p class="pmeta"><span class="me">G. M. Campedelli</span>, G. Feichtinger, D. Grass, G. Tragler, S. Wrzaczek, R. Prieto-Curiel — <span class="venue">Revise &amp; Resubmit, Nature Communications</span></p>
+      <details><summary></summary><p>Uses optimal-control theory to ask whether Mexico should devote more resources to social programs rather than incapacitation, showing that current budgets are insufficient to meaningfully reduce cartel violence.</p></details>
+    </div>
+
+    <div class="paper">
+      <p class="ptitle">Mafia, Politics and Machine Predictions</p>
+      <p class="pmeta"><span class="me">G. M. Campedelli</span>, G. Daniele, M. Le Moglie — <span class="venue">Under Review, The Economic Journal</span></p>
+      <details><summary></summary><p>A machine-learning framework that predicts and explains city-council dismissals due to mafia infiltration in Italy, producing a time-varying, granular measure of infiltration risk in local politics. The model anticipates up to 96% of infiltrated municipalities as early as two years in advance.</p></details>
+      <div class="plinks mono"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4912204">ssrn</a><a href="https://cepr.org/publications/dp19322">cepr</a></div>
+    </div>
+  </section>
+
+  </div>
+</div>
+
+<footer class="site mono">© 2026 gian maria campedelli — trento, italy · <a href="mailto:gianmaria.campedelli@unitn.it">gianmaria.campedelli@unitn.it</a></footer>
+
+<script>
+  const btns = document.querySelectorAll('#filters button');
+  const areas = document.querySelectorAll('#papers .area');
+  btns.forEach(b => b.addEventListener('click', () => {
+    btns.forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    const t = b.dataset.target;
+    areas.forEach(a => a.style.display = (t === 'all' || a.id === t) ? '' : 'none');
+    window.scrollTo({top:0, behavior:'smooth'});
+  }));
+</script>
+</body>
+</html>

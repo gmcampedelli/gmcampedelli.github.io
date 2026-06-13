@@ -1,0 +1,208 @@
+/* ============================================================
+   Gian Maria Campedelli — site styles
+   Theme: Technical / Dark (Option C)
+   All colors live here as variables — tweak freely.
+   ============================================================ */
+:root{
+  --bg:#0c1115;
+  --panel:#121a20;
+  --panel-2:#16212a;
+  --ink:#e6edf2;
+  --ink-soft:#c4d0d8;
+  --muted:#7e8c97;
+  --line:#1f2c36;
+  --accent:#2dd4bf;     /* teal */
+  --accent2:#93c5fd;    /* sky blue */
+  --nav-bg:rgba(12,17,21,.82);  /* sticky-nav backdrop */
+  --on-accent:#04110f;          /* text sitting on top of --accent */
+  --strong:#ffffff;             /* emphasized link text */
+  --maxw:880px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;
+}
+.mono{font-family:"JetBrains Mono","SF Mono",ui-monospace,"Cascadia Code",Menlo,Consolas,monospace}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+
+/* ---------- nav ---------- */
+nav.site{border-bottom:1px solid var(--line);position:sticky;top:0;
+  background:var(--nav-bg);backdrop-filter:blur(8px);z-index:20}
+.nav-inner{max-width:var(--maxw);margin:0 auto;padding:16px 28px;display:flex;justify-content:space-between;align-items:center}
+.brand{font-size:13px;letter-spacing:.02em;color:var(--muted);text-decoration:none}
+.brand b{color:var(--ink)}
+.nav-links{display:flex;gap:8px;font-size:12.5px}
+.nav-links a{color:var(--muted);text-decoration:none;padding:6px 11px;border:1px solid transparent;border-radius:6px}
+.nav-links a:hover{color:var(--ink);border-color:var(--line)}
+.nav-links a.active{color:var(--accent);border-color:var(--accent)}
+
+/* ---------- generic page header ---------- */
+.page-head{padding:56px 0 30px;border-bottom:1px solid var(--line)}
+.page-head .label{font-size:12px;color:var(--accent);letter-spacing:.08em;margin:0 0 12px}
+.page-head h1{font-size:34px;line-height:1.1;margin:0 0 12px;font-weight:700;letter-spacing:-.02em}
+.page-head p.intro{font-size:16.5px;color:var(--muted);margin:0;max-width:64ch}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:8px;font-size:13px;text-decoration:none;
+  color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:9px 15px;background:var(--panel);transition:.15s}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn.primary{border-color:var(--accent);color:var(--accent)}
+.btn.primary:hover{background:var(--accent);color:var(--on-accent)}
+
+/* ============================================================
+   HOME
+   ============================================================ */
+header.hero{padding:60px 0 40px;display:grid;grid-template-columns:1fr 150px;gap:36px;align-items:center;border-bottom:1px solid var(--line)}
+.hero .label{font-size:12px;color:var(--accent);letter-spacing:.08em;margin:0 0 16px}
+.hero h1{font-size:38px;line-height:1.08;margin:0 0 14px;font-weight:700;letter-spacing:-.02em}
+.hero .role{font-size:14.5px;color:var(--muted);margin:0;line-height:1.7}
+.hero .role b{color:var(--ink);font-weight:600}
+.hero .photo{width:150px;height:150px;border-radius:12px;object-fit:cover;object-position:50% 22%;
+  border:1px solid var(--line);filter:grayscale(.05)}
+
+.bio{padding:40px 0;border-bottom:1px solid var(--line)}
+.bio p{margin:0 0 16px;font-size:17px;color:var(--ink-soft);max-width:64ch}
+.bio p:last-child{margin-bottom:0}
+.hl{color:var(--accent2);font-weight:500}
+.stack{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.stack span{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:5px 10px}
+.stack span::before{content:"# ";color:var(--accent)}
+.links{display:flex;flex-wrap:wrap;gap:18px;margin-top:26px;font-size:13px}
+.links a{color:var(--muted);text-decoration:none}
+.links a:hover{color:var(--accent)}
+.links a::before{content:"\2197  ";color:var(--accent)}
+
+/* home — sidebar layout */
+.home-shell{max-width:1020px;margin:0 auto;padding:56px 28px 80px;display:grid;grid-template-columns:270px 1fr;gap:56px;align-items:start}
+.home-shell aside{position:sticky;top:78px}
+.home-shell aside .photo{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 20%;border-radius:18px;border:1px solid var(--line)}
+.home-shell aside h1{font-size:25px;line-height:1.12;margin:20px 0 8px;font-weight:700;letter-spacing:-.02em}
+.home-shell aside .role{font-size:13.5px;color:var(--muted);line-height:1.6;margin:0}
+.home-shell aside .role b{color:var(--ink)}
+.home-shell aside .links{flex-direction:column;gap:9px;margin-top:20px}
+.home-shell main .label{margin-top:4px}
+.home-shell main .bio{border-bottom:1px solid var(--line);padding-top:0}
+.home-shell main .news{padding-bottom:0}
+@media(max-width:760px){
+  .home-shell{grid-template-columns:1fr;gap:28px}
+  .home-shell aside{position:static}
+  .home-shell aside .photo{width:120px;height:120px;aspect-ratio:auto}
+}
+
+/* news */
+section.news{padding:42px 0 90px}
+.news-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+.news-head h2{font-size:13px;color:var(--muted);letter-spacing:.06em;margin:0;font-weight:500}
+.news-head h2::before{content:"// ";color:var(--accent)}
+.news-head a{font-size:12.5px;color:var(--accent);text-decoration:none}
+.feed{display:flex;flex-direction:column}
+.row{display:grid;grid-template-columns:104px 1fr;gap:22px;padding:18px 14px;border:1px solid transparent;border-radius:10px;transition:.15s}
+.row:hover{background:var(--panel);border-color:var(--line)}
+.row .date{font-size:12px;color:var(--accent);padding-top:3px}
+.row .what{font-size:15.5px;line-height:1.55;color:var(--ink-soft)}
+.row .what a{color:var(--strong);text-decoration:none;border-bottom:1px solid var(--accent)}
+.row .what .k{display:inline-block;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent2);margin-left:8px;vertical-align:1px}
+
+/* ============================================================
+   PAPERS
+   ============================================================ */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0 8px}
+.filters button{font-family:inherit;font-size:12.5px;color:var(--muted);background:var(--panel);
+  border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer;transition:.15s}
+.filters button:hover{color:var(--ink)}
+.filters button.active{color:var(--accent);border-color:var(--accent)}
+
+.area{padding:40px 0 8px;border-bottom:1px solid var(--line)}
+.area:last-of-type{border-bottom:0}
+.area > h2{font-size:18px;margin:0 0 4px;font-weight:700;letter-spacing:-.01em}
+.area > h2 .count{font-size:12px;color:var(--muted);font-weight:500;margin-left:8px}
+.area > p.desc{font-size:14px;color:var(--muted);margin:0 0 18px;max-width:70ch}
+
+.paper{border-top:1px solid var(--line);padding:20px 0}
+.paper:first-of-type{border-top:0}
+.paper .ptitle{font-size:16px;font-weight:600;line-height:1.4;margin:0 0 5px;color:var(--ink)}
+.paper .pmeta{font-size:13px;color:var(--muted);margin:0 0 4px;line-height:1.55}
+.paper .pmeta .me{color:var(--ink);font-weight:600}
+.paper .venue{color:var(--accent2);font-style:italic}
+.paper .pyear{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:12px;color:var(--accent)}
+.paper details{margin-top:8px}
+.paper details summary{font-size:12.5px;color:var(--muted);cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:6px;user-select:none}
+.paper details summary::-webkit-details-marker{display:none}
+.paper details summary::before{content:"+ abstract";color:var(--accent)}
+.paper details[open] summary::before{content:"\2013 abstract"}
+.paper details p{font-size:14.5px;color:var(--ink-soft);margin:10px 0 0;max-width:74ch;line-height:1.6}
+.paper .plinks{margin-top:10px;display:flex;gap:14px;font-size:12.5px}
+.paper .plinks a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line)}
+.paper .plinks a:hover{color:var(--accent);border-color:var(--accent)}
+.badge{display:inline-block;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent2);border:1px solid var(--line);border-radius:4px;padding:2px 7px;margin-left:8px;vertical-align:2px}
+
+/* ============================================================
+   CV
+   ============================================================ */
+.cv-grid{padding:36px 0 80px}
+.cv-section{padding:26px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:180px 1fr;gap:30px}
+.cv-section:first-child{border-top:0}
+.cv-section > h2{font-size:13px;color:var(--accent);letter-spacing:.06em;text-transform:uppercase;margin:4px 0 0;font-weight:600}
+.cv-list{margin:0;padding:0;list-style:none}
+.cv-item{padding:0 0 16px}
+.cv-item:last-child{padding-bottom:0}
+.cv-item .t{font-size:15.5px;color:var(--ink);font-weight:600;line-height:1.4}
+.cv-item .s{font-size:14px;color:var(--muted);line-height:1.5}
+.cv-item .yr{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:12px;color:var(--accent);margin-right:4px}
+.cv-inline{font-size:14.5px;color:var(--ink-soft);line-height:1.7}
+.cv-inline b{color:var(--ink)}
+
+/* ============================================================
+   MEDIA
+   ============================================================ */
+.media-area{padding:34px 0;border-top:1px solid var(--line)}
+.media-area:first-of-type{border-top:0}
+.media-area h2{font-size:17px;margin:0 0 4px;font-weight:700}
+.media-area p.desc{font-size:14px;color:var(--muted);margin:0 0 18px;max-width:70ch}
+.outlets{display:flex;flex-wrap:wrap;gap:10px}
+.outlet{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;color:var(--ink-soft);text-decoration:none;
+  background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:9px 14px;transition:.15s}
+.outlet:hover{border-color:var(--accent);color:var(--accent)}
+.outlet .lang{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+/* reference-only outlet (no article URL yet) */
+.outlet.ref{cursor:default;opacity:.6}
+.outlet.ref:hover{border-color:var(--line);color:var(--ink-soft)}
+.media-note{font-size:12.5px;color:var(--muted);margin:0 0 22px}
+.media-note::before{content:"// ";color:var(--accent)}
+
+/* ============================================================
+   TEACHING
+   ============================================================ */
+.course{padding:36px 0;border-top:1px solid var(--line)}
+.course:first-of-type{border-top:0}
+.course .ckicker{font-size:12px;color:var(--accent);letter-spacing:.06em;margin:0 0 8px}
+.course h2{font-size:21px;margin:0 0 4px;font-weight:700;letter-spacing:-.01em}
+.course .cprog{font-size:13.5px;color:var(--muted);margin:0 0 16px}
+.course .cprog .lvl{color:var(--accent2)}
+.course .cdesc{font-size:15.5px;color:var(--ink-soft);line-height:1.65;margin:0 0 22px;max-width:76ch}
+.course .topics-label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin:0 0 10px}
+.course .topics-label::before{content:"// ";color:var(--accent)}
+ul.topics{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+ul.topics li{font-size:14.5px;color:var(--ink-soft);line-height:1.45;padding:9px 0 9px 20px;position:relative;border-bottom:1px solid var(--line)}
+ul.topics li::before{content:"\25B8";color:var(--accent);position:absolute;left:0;top:9px;font-size:12px}
+@media(max-width:640px){ul.topics{grid-template-columns:1fr}}
+
+/* ---------- footer ---------- */
+footer.site{border-top:1px solid var(--line);padding:24px 0 60px;color:var(--muted);font-size:12px;text-align:center}
+footer.site a{color:var(--muted);text-decoration:none}
+footer.site a:hover{color:var(--accent)}
+
+/* ---------- responsive ---------- */
+@media(max-width:640px){
+  header.hero{grid-template-columns:1fr;gap:24px}
+  .hero .photo{width:96px;height:96px;order:-1}
+  .hero h1{font-size:30px}
+  .row{grid-template-columns:1fr;gap:5px}
+  .cv-section{grid-template-columns:1fr;gap:10px}
+  .page-head h1{font-size:27px}
+}

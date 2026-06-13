@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# scratch / preview folders (not for publication)
+mockups/
+palettes/
+variants/
+
+# private source material — do NOT publish
+CV_Insegnamento.pdf
+CMU____Research_Statement.pdf
+UMiami___Research_Statement.pdf
+IMG_4144.jpg
+assets/photo.jpg
+
+# misc
+*.bak
