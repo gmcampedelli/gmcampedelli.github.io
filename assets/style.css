@@ -205,4 +205,12 @@ footer.site a:hover{color:var(--accent)}
   .row{grid-template-columns:1fr;gap:5px}
   .cv-section{grid-template-columns:1fr;gap:10px}
   .page-head h1{font-size:27px}
+  /* nav: wrap onto its own line instead of overflowing the screen */
+  nav.site .nav-inner{flex-wrap:wrap;gap:8px 12px;padding:13px 20px}
+  .nav-links{flex-wrap:wrap;gap:6px;width:100%}
+  .nav-links a{padding:6px 9px}
+  .wrap,.home-shell{padding-left:20px;padding-right:20px}
 }
+/* belt-and-braces: never allow sideways drag of the whole page */
+html{-webkit-text-size-adjust:100%}
+nav.site .nav-inner{max-width:100%}
