@@ -138,6 +138,7 @@ section.news{padding:42px 0 90px}
 .paper .plinks{margin-top:10px;display:flex;gap:14px;font-size:12.5px}
 .paper .plinks a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line)}
 .paper .plinks a:hover{color:var(--accent);border-color:var(--accent)}
+.paper .plinks .pending{color:var(--muted)}
 .badge{display:inline-block;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
   color:var(--accent2);border:1px solid var(--line);border-radius:4px;padding:2px 7px;margin-left:8px;vertical-align:2px}
 
